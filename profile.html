@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>For You<3</title>
+    <style>
+        body {
+            background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2Fe5%2F7b%2Fba%2Fe57bba3fcd9cae9ce52a12f07a0bb56f.jpg&tbnid=ZLr5wKyaaNlYOM&vet=10CA0QxiAoA2oXChMIuN-1zZXehgMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Findie-purpule-heart--897834875684715797%2F&docid=Ka2AOpJvnECmuM&w=736&h=460&itg=1&q=background%20aesthetic%20love&ved=0CA0QxiAoA2oXChMIuN-1zZXehgMVAAAAAB0AAAAAEAc'); /* Ganti dengan path gambar love Anda */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif; /* Mengganti font family untuk kejelasan */
+        }
+        .profile-container {
+            background-color: rgba(255, 102, 153, 0.8); /* Ubah opacity background */
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: black; /* Mengubah warna teks untuk kontras */
+        }
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: #ff0000;
+            color: #ffcccc;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: graytext; /* Warna tombol */
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff6666;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Dear Kheran</h2>
+        <p><strong>Hii!! How Are You??</strong> <span th:text="${user.fullName}"></span></p>
+        <p><strong>Do you miss me? I swear this is actually just for fun, because I'm learning to make websites. So I remembered why not make a website for messages like that. yeah I immediately remembered you hahaha. I don't know what words to write, because it's not your birthday yet, so I don't know what love sentences to give you. hahahhahha there are people who want to say "I love you so much... I really really miss you, I hope you have a nice day. Remember to always live life well, find new things that you want to know, don't just do that. When are you looking for a girlfriend, I've already entered college and I haven't met a new girl. I also want to see what kind of girl I'm surprised I like now hahahaaha. I really love Kheran, miss you babe<3</strong> <span th:text="${user.username}"></span></p>
+    </div>
+    <a href="login.html">Exit</a>
+</body>
+</html>
